@@ -14,7 +14,7 @@ include "menu.php"
 	<h1>Личный сайт студента GeekBrains</h1>
 
 	<div class="center">
-	<img src="img/kJ8NQXi.jpeg">
+	<img class="img" src="img/kJ8NQXi.jpeg">
 		<div class="box_text">
 			<p><b>Добрый день</b>. Меня зовут <i>Горячев Алексей</i>. Совсем недавно я начал программировать, однако уже написал свой первый сайт.</p>
 
@@ -26,6 +26,7 @@ include "menu.php"
 			<a href="guess.php">Угадайка</a>
 			<a href="guessfor2.php">Угадайка 2 игрока</a>
 			<a href="passgenerator.php">Генератор паролей</a>
+            <a href="image.php">Галерея фотографий</a>
 			</p>
 		</div>
 	</div>
