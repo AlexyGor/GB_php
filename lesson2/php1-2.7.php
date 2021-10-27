@@ -6,7 +6,10 @@
  */
 
 /* Часы */
-function hourToString($hour)
+
+use JetBrains\PhpStorm\Pure;
+
+function hourToString($hour): string
 {
     if ($hour == 1 || $hour == 21) {
         $hourText = "час";
@@ -19,7 +22,7 @@ function hourToString($hour)
 }
 
 /* Минуты */
-function minuteToString($minute)
+function minuteToString($minute): string
 {
     /* Алгоритм: 1, 21, 31, 41, 51 - всегда будет "минута".
      * Если младший разряд больше 1-го и меньше 5, при этом само число при делении на 100
@@ -47,7 +50,12 @@ function minuteToString($minute)
 }
 
 /* Итог: Часы + Минуты */
-function timeToString($hour, $minute)
+/**
+ * @param $hour
+ * @param $minute
+ * @return string
+ */
+#[Pure] function timeToString($hour, $minute): string
 {
     if ((!is_numeric($hour) || !is_numeric($minute))
         || ($hour < 0 || $hour > 24) || ($minute < 0 || $minute > 60)
