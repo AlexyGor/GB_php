@@ -24,7 +24,8 @@ include "menu.php"
             <div class="">
 
                 <a href="img/<?php echo $image; ?>" target="_blank"</a>
-                <img src="img/<?php echo $image; ?>" width="100px" height="100px" alt="monke">
+                <img src="img/<?php echo $image; ?>" width="100px" height="100px" alt="">
+
 
             </div>
                     <?php
